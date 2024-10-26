@@ -3,34 +3,30 @@ use aiken/option
 // trace 
 // ? operator
 
-pub fn increment(n: Int, step: Option<Int>){
-    // trace label
-    // trace @"Inside fn Increment"
+pub fn increment(n: Int, step: Option<Int>) {
+  // trace label
+  // trace @"Inside fn Increment"
 
-    // // trace variable
-    // trace n
+  // // trace variable
+  // trace n
 
-    // trace variable
-    // trace step
-    
+  // trace variable
+  // trace step
 
-    
-    // // trace @"LABEL" ; variable
-    // trace @"Inside fn increment": n
-    // trace @"Inside fn increment": n, step
+  // // trace @"LABEL" ; variable
+  // trace @"Inside fn increment": n
+  // trace @"Inside fn increment": n, step
 
-   // One way 
-    // n + when step is {
-    //     Some(value) -> value
-    //     None -> 1
-    // }
+  // One way 
+  // n + when step is {
+  //     Some(value) -> value
+  //     None -> 1
+  // }
 
-    // Second Way 
-    let step = option.or_else(step, 1)
-    n + step
-
+  // Second Way 
+  let step = option.or_else(step, 1)
+  n + step
 }
-
 // // unit testing
 
 // // It can return :
@@ -48,12 +44,9 @@ pub fn increment(n: Int, step: Option<Int>){
 
 // }
 
-
 // test test_fail () fail  {
 //     expect 5 = increment(3, None) 
-    
 // }
-
 
 // // Property testing
 // test increment_property_test (n : Int via fuzz.int()){
@@ -61,7 +54,6 @@ pub fn increment(n: Int, step: Option<Int>){
 //     increment(n, None) == n + 1
 
 // }
-
 
 // // test increment_property_test (n : Int via fuzz.int_between(1,4)){
 
@@ -71,7 +63,6 @@ pub fn increment(n: Int, step: Option<Int>){
 // //         when 3 => @"3"
 // //         when 4 => @"4"
 // //         - => @"Impossible"
-
 
 // //     )
 // //     increment(n, None) == n + 1
@@ -88,8 +79,6 @@ pub fn increment(n: Int, step: Option<Int>){
 // //         increment(n, Some(step)) > n 
 
 // // }
-
-
 
 // // ls = [1,2,3] => [3,2,1] => [1,2,3]
 // // reverse(reverse(value)) = value
