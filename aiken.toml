@@ -1,12 +1,12 @@
-name = "tania/testing_debugging"
+name = "aikenprojects/testing_debugging"
 version = "0.0.0"
 compiler = "v1.1.3"
 plutus = "v3"
 license = "Apache-2.0"
-description = "Aiken contracts for project 'tania/testing_debugging'"
+description = "Aiken contracts for project 'aikenprojects/testing_debugging'"
 
 [repository]
-user = "tania"
+user = "aikenprojects"
 project = "testing_debugging"
 platform = "github"
 
